@@ -301,14 +301,14 @@
   }
 
   .navbar-links a {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: var(--clr-navy-800);
-    padding: 14px 24px;
+    padding: 12px 20px;
     width: 100%;
-    max-width: 340px;
+    max-width: 280px;
     text-align: center;
-    border-radius: 14px;
+    border-radius: 12px;
     background: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(15, 23, 42, 0.06);
     backdrop-filter: blur(10px);
@@ -332,6 +332,15 @@
   .navbar-links.is-active a:nth-child(6) { transition-delay: 0.3s; }
   .navbar-links.is-active a:nth-child(7) { transition-delay: 0.35s; }
   .navbar-links.is-active a:nth-child(8) { transition-delay: 0.4s; }
+
+  @media (max-width: 480px) {
+    .navbar-links a {
+      font-size: 1rem;
+      padding: 10px 16px;
+      max-width: 260px;
+      border-radius: 10px;
+    }
+  }
 
   .navbar-links a:hover {
     color: var(--clr-primary-600);
@@ -378,11 +387,11 @@
   .navbar-actions.is-mobile-visible .btn-login,
   .navbar-actions.is-mobile-visible .btn-demo {
     width: 100%;
-    padding: var(--space-4) var(--space-6);
-    font-size: 1rem;
+    padding: 12px 20px;
+    font-size: 0.95rem;
     text-align: center;
     justify-content: center;
-    border-radius: var(--radius-lg);
+    border-radius: 12px;
   }
 
   .navbar-actions.is-mobile-visible .btn-login {
