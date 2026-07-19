@@ -258,84 +258,104 @@
   min-height: 500px;
 }
 
-  .showcase {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  .features-grid-visual {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
     width: 100%;
-    max-width: 420px;
+    max-width: 480px;
   }
 
-  .showcase-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    padding: 16px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  .feature-card-visual {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4);
+    transition: var(--transition-base);
+    position: relative;
+    overflow: hidden;
   }
 
-  .showcase-item:hover {
+  .feature-card-visual::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+  }
+
+  .feature-card-visual:hover {
     transform: translateY(-4px);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(37, 99, 235, 0.2);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
   }
 
-  .showcase-item .s-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 12px;
+  .feature-card-visual:hover::before {
+    opacity: 1;
+  }
+
+  .feature-card-visual .fv-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
-    flex-shrink: 0;
+    font-size: 1.5rem;
+    margin-bottom: var(--space-3);
+    position: relative;
+    z-index: 1;
   }
 
-  .showcase-item .s-icon.blue { background: rgba(37, 99, 235, 0.15); color: #60A5FA; }
-  .showcase-item .s-icon.green { background: rgba(16, 185, 129, 0.15); color: #34D399; }
-  .showcase-item .s-icon.purple { background: rgba(124, 58, 237, 0.15); color: #A78BFA; }
-  .showcase-item .s-icon.orange { background: rgba(245, 158, 11, 0.15); color: #FBBF24; }
+  .feature-card-visual .fv-icon.blue { background: rgba(37, 99, 235, 0.1); }
+  .feature-card-visual .fv-icon.green { background: rgba(16, 185, 129, 0.1); }
+  .feature-card-visual .fv-icon.purple { background: rgba(124, 58, 237, 0.1); }
+  .feature-card-visual .fv-icon.orange { background: rgba(245, 158, 11, 0.1); }
 
-  .showcase-item .s-body { flex: 1; }
-  .showcase-item .s-title {
+  .feature-card-visual .fv-title {
     font-family: var(--font-heading);
-    font-size: 0.9rem;
+    font-size: var(--text-base);
     font-weight: 600;
-    color: #F8FAFC;
-    margin-bottom: 4px;
+    color: var(--clr-white);
+    margin-bottom: var(--space-2);
+    position: relative;
+    z-index: 1;
   }
-  .showcase-item .s-desc {
-    font-size: 0.75rem;
+
+  .feature-card-visual .fv-desc {
+    font-size: var(--text-xs);
     color: rgba(255, 255, 255, 0.5);
-    line-height: 1.5;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
   }
-  .showcase-item .s-metric {
-    margin-top: 8px;
+
+  .feature-card-visual .fv-stat {
+    margin-top: var(--space-3);
+    padding-top: var(--space-3);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
     display: flex;
-    align-items: center;
-    gap: 8px;
+    align-items: baseline;
+    gap: var(--space-2);
+    position: relative;
+    z-index: 1;
   }
-  .showcase-item .s-bar {
-    flex: 1;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 4px;
-    overflow: hidden;
+
+  .feature-card-visual .fv-stat-value {
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--clr-white);
   }
-  .showcase-item .s-bar span {
-    display: block;
-    height: 100%;
-    border-radius: 4px;
-  }
-  .showcase-item .s-value {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #F8FAFC;
-    min-width: 32px;
-    text-align: right;
+
+  .feature-card-visual .fv-stat-label {
+    font-size: var(--text-xs);
+    color: rgba(255, 255, 255, 0.4);
   }
 
 /* Glass card header */
