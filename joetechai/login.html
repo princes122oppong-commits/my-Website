@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Login to JoetechAI — Access your dashboard">
+  <meta name="author" content="JoetechAI">
+  <title>Login — JoetechAI</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/01-design-system.css">
+  <link rel="stylesheet" href="assets/css/login.css">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+  <div class="login-page">
+
+    <div class="login-container">
+
+      <!-- Left Side: Branding -->
+      <div class="login-brand">
+        <div class="brand-content">
+          <a href="index.html" class="login-logo">
+            <span class="logo-icon">J</span>
+            <span class="logo-text">JoetechAI</span>
+          </a>
+
+          <div class="brand-welcome">
+            <h1>Welcome Back to <span class="highlight">JoetechAI</span></h1>
+            <p>Sign in to your account to access your dashboard, manage your products, and continue streamlining your business operations.</p>
+          </div>
+
+          <!-- Illustration Grid -->
+          <div class="brand-illustration">
+            <div class="illus-grid">
+              <div class="illus-card">
+                <div class="illus-icon">🏪</div>
+                <div class="illus-label">Store Sales</div>
+                <div class="illus-value">$12.4k</div>
+              </div>
+              <div class="illus-card">
+                <div class="illus-icon">🏥</div>
+                <div class="illus-label">Patients</div>
+                <div class="illus-value">284</div>
+              </div>
+              <div class="illus-card">
+                <div class="illus-icon">📚</div>
+                <div class="illus-label">Students</div>
+                <div class="illus-value">1,240</div>
+              </div>
+              <div class="illus-card">
+                <div class="illus-icon">📊</div>
+                <div class="illus-label">Analytics</div>
+                <div class="illus-value">+18%</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial -->
+          <div class="brand-testimonial">
+            <p class="qt-text">"JoetechAI has completely transformed how we manage our operations. The platform is intuitive, powerful, and our team loves it."</p>
+            <div class="qt-author">
+              <span class="qt-avatar">SM</span>
+              <div>
+                <div class="qt-name">Sarah Mitchell</div>
+                <div class="qt-role">CEO, TechMart Retail</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side: Login Form -->
+      <div class="login-form-side">
+        <div class="login-card">
+          <div class="login-header">
+            <h2>Sign In</h2>
+            <p>Enter your credentials to access your account</p>
+          </div>
+
+          <form class="login-form" onsubmit="event.preventDefault(); alert('Login functionality coming soon!');">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <div class="input-wrap">
+                <span class="input-icon">✉</span>
+                <input type="email" id="email" placeholder="you@company.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <div class="input-wrap">
+                <span class="input-icon">🔒</span>
+                <input type="password" id="password" placeholder="Enter your password" required>
+              </div>
+            </div>
+
+            <div class="form-options">
+              <div class="remember">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+              </div>
+              <a href="#" class="forgot-link">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn-login">Sign In →</button>
+
+            <div class="divider">
+              <span>Or continue with</span>
+            </div>
+
+            <div class="sso-buttons">
+              <a href="#" class="btn-sso">🔵 Google</a>
+              <a href="#" class="btn-sso">⚫ GitHub</a>
+            </div>
+
+            <p class="register-link">
+              Don't have an account? <a href="signup.html">Create one</a>
+            </p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

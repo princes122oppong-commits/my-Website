@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JoetechAI Products — Powerful software solutions for every business">
+  <title>Products — JoetechAI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/01-design-system.css">
+  <link rel="stylesheet" href="assets/css/02-navigation.css">
+  <link rel="stylesheet" href="assets/css/05-products.css">
+  <link rel="stylesheet" href="assets/css/13-footer.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="navbar-logo"><span class="logo-icon">J</span><span class="logo-text">JoetechAI</span></a>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="is-active">Products</a>
+        <a href="industries.html">Industries</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="support.html">Support</a>
+      </div>
+      <div class="navbar-actions">
+        <a href="login.html" class="btn-login">Login</a>
+        <a href="demo.html" class="btn-demo">Request Demo</a>
+      </div>
+      <button class="navbar-toggle" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <main>
+    <section class="section products" id="products">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Our Products</span>
+          <h2 class="section-title">Our Software Products</h2>
+          <p class="section-subtitle">Comprehensive software suite designed to streamline operations across various industries.</p>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-dash store">
+              <div class="dash-mockup">
+                <div class="mockup-header"><span class="mockup-dot red"></span><span class="mockup-dot yellow"></span><span class="mockup-dot green"></span><span class="mockup-title">Store Dashboard</span></div>
+                <div class="mockup-row"><span class="mockup-label">Sales</span><div class="mockup-bar primary" style="width:75%"></div><span class="mockup-value">$12.4k</span></div>
+                <div class="mockup-row"><span class="mockup-label">Orders</span><div class="mockup-bar green" style="width:60%"></div><span class="mockup-value">284</span></div>
+                <div class="mockup-chart"><div class="chart-col b" style="height:40%"></div><div class="chart-col g" style="height:65%"></div><div class="chart-col b" style="height:50%"></div><div class="chart-col g" style="height:80%"></div><div class="chart-col b" style="height:60%"></div><div class="chart-col g" style="height:90%"></div><div class="chart-col b" style="height:70%"></div></div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Store Management</h3>
+              <p class="product-desc">Complete retail management with inventory tracking, POS integration, and real-time analytics.</p>
+              <div class="product-features"><span class="product-feature"><span class="feat-dot blue"></span> Inventory</span><span class="product-feature"><span class="feat-dot green"></span> POS</span><span class="product-feature"><span class="feat-dot purple"></span> Sales</span><span class="product-feature"><span class="feat-dot orange"></span> Reports</span><span class="product-feature"><span class="feat-dot red"></span> Customers</span></div>
+            </div>
+            <a href="products/store-manager.html" class="product-link">Learn More <span class="link-arrow">→</span></a>
+          </div>
+          <div class="product-card">
+            <div class="product-dash hospital">
+              <div class="dash-mockup">
+                <div class="mockup-header"><span class="mockup-dot red"></span><span class="mockup-dot yellow"></span><span class="mockup-dot green"></span><span class="mockup-title">Queue Status</span></div>
+                <div class="mockup-queue">
+                  <div class="q-item"><span class="q-avatar b"></span><span class="q-name">John Doe</span><span class="q-status w">Waiting</span></div>
+                  <div class="q-item"><span class="q-avatar g"></span><span class="q-name">Sarah M.</span><span class="q-status d">Done</span></div>
+                  <div class="q-item"><span class="q-avatar p"></span><span class="q-name">Robert K.</span><span class="q-status w">Waiting</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Hospital Queue</h3>
+              <p class="product-desc">Streamline patient flow with intelligent queue management and appointment scheduling.</p>
+              <div class="product-features"><span class="product-feature"><span class="feat-dot green"></span> Appointments</span><span class="product-feature"><span class="feat-dot blue"></span> Queue Tracking</span><span class="product-feature"><span class="feat-dot purple"></span> Patient Mgmt</span></div>
+            </div>
+            <a href="products/hospital-queue.html" class="product-link">Learn More <span class="link-arrow">→</span></a>
+          </div>
+          <div class="product-card is-coming">
+            <div class="product-dash school">
+              <div class="dash-mockup">
+                <div class="mockup-header"><span class="mockup-dot red"></span><span class="mockup-dot yellow"></span><span class="mockup-dot green"></span><span class="mockup-title">Grade Overview</span></div>
+                <div class="mockup-grades">
+                  <div class="g-row"><span class="g-subject">Math</span><div class="g-bar"><div class="fill" style="width:92%;background:var(--clr-primary-400)"></div></div></div>
+                  <div class="g-row"><span class="g-subject">Science</span><div class="g-bar"><div class="fill" style="width:85%;background:var(--clr-emerald-400)"></div></div></div>
+                  <div class="g-row"><span class="g-subject">English</span><div class="g-bar"><div class="fill" style="width:78%;background:#FBBF24"></div></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>School Management</h3>
+              <p class="product-desc">Comprehensive educational platform for administrators, teachers, students, and parents.</p>
+              <div class="product-features"><span class="product-feature"><span class="feat-dot purple"></span> Students</span><span class="product-feature"><span class="feat-dot blue"></span> Grades</span><span class="product-feature"><span class="feat-dot green"></span> Attendance</span><span class="product-feature"><span class="feat-dot orange"></span> Scheduling</span></div>
+            </div>
+            <span class="coming-badge"><span class="badge-pulse"></span> Coming Soon</span>
+            <a href="#" class="product-link">Learn More <span class="link-arrow">→</span></a>
+          </div>
+          <div class="product-card is-coming">
+            <div class="product-dash restaurant">
+              <div class="dash-mockup">
+                <div class="mockup-header"><span class="mockup-dot red"></span><span class="mockup-dot yellow"></span><span class="mockup-dot green"></span><span class="mockup-title">Table Status</span></div>
+                <div class="mockup-tables">
+                  <div class="t-item"><span class="t-icon">🍽</span><span class="t-name">Table 4</span><span class="q-status d" style="font-size:0.4rem;padding:1px 4px;border-radius:4px;background:rgba(16,185,129,0.12);color:#059669;">Seated</span></div>
+                  <div class="t-item"><span class="t-icon">🍽</span><span class="t-name">Table 7</span><span class="q-status w" style="font-size:0.4rem;padding:1px 4px;border-radius:4px;background:rgba(245,158,11,0.12);color:#D97706;">Reserved</span></div>
+                  <div class="t-item"><span class="t-icon">🍽</span><span class="t-name">Table 2</span><span class="q-status d" style="font-size:0.4rem;padding:1px 4px;border-radius:4px;background:rgba(16,185,129,0.12);color:#059669;">Seated</span></div>
+                  <div class="t-item"><span class="t-icon">🍽</span><span class="t-name">Table 9</span><span class="q-status w" style="font-size:0.4rem;padding:1px 4px;border-radius:4px;background:rgba(245,158,11,0.12);color:#D97706;">Reserved</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Restaurant Management</h3>
+              <p class="product-desc">Complete restaurant management with table booking, menu management, and order tracking.</p>
+              <div class="product-features"><span class="product-feature"><span class="feat-dot red"></span> Table Booking</span><span class="product-feature"><span class="feat-dot orange"></span> Menu Mgmt</span><span class="product-feature"><span class="feat-dot purple"></span> Orders</span></div>
+            </div>
+            <span class="coming-badge"><span class="badge-pulse"></span> Coming Soon</span>
+            <a href="#" class="product-link">Learn More <span class="link-arrow">→</span></a>
+          </div>
+          <div class="product-card is-coming">
+            <div class="product-dash pharmacy">
+              <div class="dash-mockup">
+                <div class="mockup-header"><span class="mockup-dot red"></span><span class="mockup-dot yellow"></span><span class="mockup-dot green"></span><span class="mockup-title">Stock Levels</span></div>
+                <div class="mockup-stock">
+                  <div class="s-row"><span class="s-name">Amoxicillin</span><div class="s-bar"><div class="fill" style="width:70%;background:var(--clr-emerald-400)"></div></div></div>
+                  <div class="s-row"><span class="s-name">Ibuprofen</span><div class="s-bar"><div class="fill" style="width:45%;background:var(--clr-warning)"></div></div></div>
+                  <div class="s-row"><span class="s-name">Metformin</span><div class="s-bar"><div class="fill" style="width:85%;background:var(--clr-primary-400)"></div></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Pharmacy Management</h3>
+              <p class="product-desc">Pharmacy inventory and prescription management with regulatory compliance.</p>
+              <div class="product-features"><span class="product-feature"><span class="feat-dot orange"></span> Inventory</span><span class="product-feature"><span class="feat-dot blue"></span> Prescriptions</span><span class="product-feature"><span class="feat-dot green"></span> Compliance</span></div>
+            </div>
+            <span class="coming-badge"><span class="badge-pulse"></span> Coming Soon</span>
+            <a href="#" class="product-link">Learn More <span class="link-arrow">→</span></a>
+          </div>
+          <div class="product-card is-coming">
+            <div class="product-dash hotel">
+              <div class="dash-mockup">
+                <div class="mockup-header"><span class="mockup-dot red"></span><span class="mockup-dot yellow"></span><span class="mockup-dot green"></span><span class="mockup-title">Bookings</span></div>
+                <div class="mockup-bookings">
+                  <div class="b-row"><span class="b-room">101</span><span class="b-guest">Alice W.</span><span class="q-status d" style="font-size:0.4rem;padding:1px 4px;border-radius:4px;background:rgba(16,185,129,0.12);color:#059669;">Checked In</span></div>
+                  <div class="b-row"><span class="b-room">204</span><span class="b-guest">Bob M.</span><span class="q-status w" style="font-size:0.4rem;padding:1px 4px;border-radius:4px;background:rgba(245,158,11,0.12);color:#D97706;">Expected</span></div>
+                  <div class="b-row"><span class="b-room">312</span><span class="b-guest">Carol S.</span><span class="q-status d" style="font-size:0.4rem;padding:1px 4px;border-radius:4px;background:rgba(16,185,129,0.12);color:#059669;">Checked In</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Hotel Management</h3>
+              <p class="product-desc">Property management system for hotels, resorts, and hospitality businesses.</p>
+              <div class="product-features"><span class="product-feature"><span class="feat-dot blue"></span> Bookings</span><span class="product-feature"><span class="feat-dot green"></span> Housekeeping</span><span class="product-feature"><span class="feat-dot purple"></span> Billing</span></div>
+            </div>
+            <span class="coming-badge"><span class="badge-pulse"></span> Coming Soon</span>
+            <a href="#" class="product-link">Learn More <span class="link-arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand"><a href="index.html" class="footer-logo"><span class="logo-icon">J</span><span class="logo-text">JoetechAI</span></a><p class="brand-desc">Smart software solutions for modern businesses.</p><div class="footer-social"><a href="#" class="social-link twitter" aria-label="Twitter">𝕏</a><a href="#" class="social-link linkedin" aria-label="LinkedIn">in</a><a href="#" class="social-link github" aria-label="GitHub">GH</a><a href="#" class="social-link youtube" aria-label="YouTube">▶</a><a href="#" class="social-link instagram" aria-label="Instagram">◉</a></div></div>
+        <div class="footer-column"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-column"><h4>Products</h4><ul><li><a href="products/store-manager.html">Store Manager</a></li><li><a href="products/hospital-queue.html">Hospital Queue</a></li><li><a href="products/school-manager.html">School Manager</a></li></ul></div>
+        <div class="footer-column"><h4>Resources</h4><ul><li><a href="blog.html">Blog</a></li><li><a href="#">Documentation</a></li></ul></div>
+        <div class="footer-column"><h4>Support</h4><ul><li><a href="support.html">Help Center</a></li><li><a href="contact.html">Contact Support</a></li></ul></div>
+        <div class="footer-column"><h4>Legal</h4><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Cookies</a></li></ul></div>
+      </div>
+      <div class="footer-newsletter">
+        <div class="newsletter-wrapper"><div class="newsletter-content"><h3>Stay in the loop</h3><p>Get product updates and insights delivered to your inbox.</p></div>
+        <form class="newsletter-form" onsubmit="event.preventDefault();alert('Thank you for subscribing!');"><div class="input-group"><span class="input-icon">✉</span><input type="email" placeholder="Enter your email address" required></div><button type="submit" class="btn-subscribe">Subscribe →</button></form></div>
+      </div>
+      <div class="footer-bottom"><p class="copyright">&copy; 2026 JoetechAI. All Rights Reserved.</p><div class="legal-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookies</a></div></div>
+    </div>
+  </footer>
+  <script src="assets/js/01-navigation.js"></script>
+</body>
+</html>

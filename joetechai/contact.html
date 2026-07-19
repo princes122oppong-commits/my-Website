@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact JoetechAI — Get in touch with our team">
+  <meta name="author" content="JoetechAI">
+  <title>Contact Us — JoetechAI</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/01-design-system.css">
+  <link rel="stylesheet" href="assets/css/02-navigation.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <link rel="stylesheet" href="assets/css/13-footer.css">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="navbar-logo">
+        <span class="logo-icon">J</span>
+        <span class="logo-text">JoetechAI</span>
+      </a>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#industries">Industries</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="is-active">Contact</a>
+        <a href="support.html">Support</a>
+      </div>
+      <div class="navbar-actions">
+        <a href="login.html" class="btn-login">Login</a>
+        <a href="demo.html" class="btn-demo">Request Demo</a>
+      </div>
+      <button class="navbar-toggle" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="contact-hero">
+      <div class="container">
+        <h1>Let's <span class="highlight">Talk</span></h1>
+        <p>Have a question, need a demo, or want to learn more about JoetechAI? We're here to help. Reach out and our team will get back to you promptly.</p>
+      </div>
+    </section>
+
+    <!-- Contact Info + Form -->
+    <section class="contact-main">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-icon">✉️</div>
+              <h4>Email Us</h4>
+              <p>Our support team is ready to help</p>
+              <a href="mailto:hello@joetechai.com">hello@joetechai.com</a>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">📞</div>
+              <h4>Call Us</h4>
+              <p>Mon–Fri, 9am–6pm EST</p>
+              <a href="tel:+1234567890">+1 (234) 567-890</a>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">💬</div>
+              <h4>Live Chat</h4>
+              <p>Chat with our team in real-time</p>
+              <a href="#">Start Live Chat</a>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">📍</div>
+              <h4>Visit Us</h4>
+              <p>123 Tech Street, Silicon Valley, CA 94025</p>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap">
+            <h3>Send Us a Message</h3>
+            <p class="form-subtitle">Fill out the form below and we'll get back to you within 24 hours.</p>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for your message! We will get back to you shortly.');">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" placeholder="John" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" placeholder="Doe" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="john@company.com" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject">
+                  <option value="">Select a subject</option>
+                  <option value="demo">Request a Demo</option>
+                  <option value="sales">Sales Inquiry</option>
+                  <option value="support">Technical Support</option>
+                  <option value="partnership">Partnership Opportunity</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Tell us how we can help..." required></textarea>
+              </div>
+              <button type="submit" class="btn-submit">Send Message →</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Office Location -->
+    <section class="contact-location">
+      <div class="container">
+        <div class="location-grid">
+          <div class="location-info">
+            <span class="section-label">Our Office</span>
+            <h3>Visit Our Headquarters</h3>
+            <p>We're located in the heart of Silicon Valley. Drop by for a demo or just to say hello — our doors are always open to customers and partners.</p>
+            <div class="loc-detail">
+              <span class="loc-icon">📍</span>
+              <span>123 Tech Street, Silicon Valley, CA 94025</span>
+            </div>
+            <div class="loc-detail">
+              <span class="loc-icon">🚗</span>
+              <span>Free parking available on-site</span>
+            </div>
+            <div class="loc-detail">
+              <span class="loc-icon">🚇</span>
+              <span>2 blocks from Downtown Transit Center</span>
+            </div>
+          </div>
+          <div class="map-placeholder">
+            <div class="map-content">
+              <div class="map-icon">📍</div>
+              <p class="map-text">Interactive Map<br><span style="font-size:0.8rem;color:var(--clr-navy-300)">123 Tech Street, Silicon Valley, CA</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Hours -->
+    <section class="contact-hours">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Hours</span>
+          <h2 class="section-title">Business Hours</h2>
+          <p class="section-subtitle">Our team is available during the following hours.</p>
+        </div>
+        <div class="hours-grid">
+          <div class="hours-card">
+            <span class="day">Monday</span>
+            <span class="time">9:00 AM — 6:00 PM</span>
+          </div>
+          <div class="hours-card">
+            <span class="day">Tuesday</span>
+            <span class="time">9:00 AM — 6:00 PM</span>
+          </div>
+          <div class="hours-card">
+            <span class="day">Wednesday</span>
+            <span class="time">9:00 AM — 6:00 PM</span>
+          </div>
+          <div class="hours-card">
+            <span class="day">Thursday</span>
+            <span class="time">9:00 AM — 6:00 PM</span>
+          </div>
+          <div class="hours-card">
+            <span class="day">Friday</span>
+            <span class="time">9:00 AM — 5:00 PM</span>
+          </div>
+          <div class="hours-card">
+            <span class="day">Saturday</span>
+            <span class="time closed">Closed</span>
+          </div>
+          <div class="hours-card">
+            <span class="day">Sunday</span>
+            <span class="time closed">Closed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="contact-faq">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">Quick Answers</h2>
+          <p class="section-subtitle">Find answers to common questions about contacting us.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item is-open">
+            <button class="faq-question">How quickly will I hear back?<span class="faq-icon">+</span></button>
+            <div class="faq-answer"><p>We typically respond to all inquiries within 24 hours during business days. For urgent matters, we recommend calling our support line or using the live chat feature.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Do you offer demos?<span class="faq-icon">+</span></button>
+            <div class="faq-answer"><p>Absolutely! We offer free personalized demos for all our products. Simply fill out the contact form or visit our demo request page to schedule a session at your convenience.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Can I visit your office?<span class="faq-icon">+</span></button>
+            <div class="faq-answer"><p>Yes! We welcome visitors. Please reach out in advance so we can schedule a time and ensure someone is available to give you a proper tour and demo.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">What countries do you serve?<span class="faq-icon">+</span></button>
+            <div class="faq-answer"><p>JoetechAI serves businesses in over 15 countries worldwide. Our cloud-based platform is accessible from anywhere with an internet connection.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="contact-cta">
+      <div class="container">
+        <h2>Ready to Get Started?</h2>
+        <p>Join thousands of businesses using JoetechAI to automate operations and drive growth.</p>
+        <div class="cta-buttons">
+          <a href="demo.html" class="btn-primary">Request a Demo</a>
+          <a href="pricing.html" class="btn-secondary">View Pricing</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><span class="logo-icon">J</span><span class="logo-text">JoetechAI</span></a>
+          <p class="brand-desc">Smart software solutions for modern businesses. We build powerful tools that help businesses automate, grow, and succeed.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link twitter" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link linkedin" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-link github" aria-label="GitHub">GH</a>
+            <a href="#" class="social-link youtube" aria-label="YouTube">▶</a>
+            <a href="#" class="social-link instagram" aria-label="Instagram">◉</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products/store-manager.html">Store Manager</a></li>
+            <li><a href="products/hospital-queue.html">Hospital Queue</a></li>
+            <li><a href="products/school-manager.html">School Manager</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">Documentation</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="support.html">Help Center</a></li>
+            <li><a href="contact.html">Contact Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-newsletter">
+        <div class="newsletter-wrapper">
+          <div class="newsletter-content">
+            <h3>Stay in the loop</h3>
+            <p>Get product updates, industry insights, and exclusive offers delivered to your inbox.</p>
+          </div>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <div class="input-group"><span class="input-icon">✉</span><input type="email" placeholder="Enter your email address" required></div>
+            <button type="submit" class="btn-subscribe">Subscribe →</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 JoetechAI. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/01-navigation.js"></script>
+  <script src="assets/js/04-faq.js"></script>
+</body>
+</html>

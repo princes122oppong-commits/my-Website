@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Store Management System by JoetechAI — Complete retail management solution">
+  <meta name="author" content="JoetechAI">
+  <title>Store Management System — JoetechAI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/01-design-system.css">
+  <link rel="stylesheet" href="../assets/css/02-navigation.css">
+  <link rel="stylesheet" href="../assets/css/product-detail.css">
+  <link rel="stylesheet" href="../assets/css/13-footer.css">
+
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="navbar-logo">
+        <span class="logo-icon">J</span>
+        <span class="logo-text">JoetechAI</span>
+      </a>
+      <div class="navbar-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#products" class="is-active">Products</a>
+        <a href="../index.html#industries">Industries</a>
+        <a href="../pricing.html">Pricing</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../support.html">Support</a>
+      </div>
+      <div class="navbar-actions">
+        <a href="../login.html" class="btn-login">Login</a>
+        <a href="../demo.html" class="btn-demo">Request Demo</a>
+      </div>
+      <button class="navbar-toggle" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="pd-hero">
+      <div class="container">
+        <div class="pd-hero-grid">
+          <div class="pd-hero-content">
+            <div class="pd-badge">
+              <span class="pd-dot"></span>
+              Version 3.2 — Latest Release
+            </div>
+            <h1>Store Management <span class="highlight">System</span></h1>
+            <p>Complete retail management solution with inventory tracking, POS integration, and real-time analytics to help you boost sales and streamline operations.</p>
+            <div class="pd-actions">
+              <a href="#demo" class="btn-primary">Request Demo →</a>
+              <a href="#pricing" class="btn-secondary">View Pricing</a>
+            </div>
+          </div>
+          <div class="pd-hero-visual">
+            <div class="pd-mockup">
+              <div class="mockup-header">
+                <span class="mockup-dot r"></span>
+                <span class="mockup-dot y"></span>
+                <span class="mockup-dot g"></span>
+                <span class="mockup-title">Store Dashboard — Real-Time Overview</span>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-col">
+                  <div class="m-row"><span class="m-label">Sales</span><div class="m-bar"><div class="fill" style="width:75%;background:var(--gradient-primary)"></div></div><span class="m-value">$12.4k</span></div>
+                  <div class="m-row"><span class="m-label">Orders</span><div class="m-bar"><div class="fill" style="width:60%;background:var(--gradient-emerald)"></div></div><span class="m-value">284</span></div>
+                  <div class="m-row"><span class="m-label">Revenue</span><div class="m-bar"><div class="fill" style="width:85%;background:var(--gradient-primary)"></div></div><span class="m-value">$48.2k</span></div>
+                </div>
+                <div class="mockup-col">
+                  <div class="m-row"><span class="m-label">Items</span><div class="m-bar"><div class="fill" style="width:70%;background:#7C3AED"></div></div><span class="m-value">1,240</span></div>
+                  <div class="m-row"><span class="m-label">Returns</span><div class="m-bar"><div class="fill" style="width:15%;background:#F59E0B"></div></div><span class="m-value">2.3%</span></div>
+                  <div class="m-row"><span class="m-label">Growth</span><div class="m-bar"><div class="fill" style="width:90%;background:#10B981"></div></div><span class="m-value">+18%</span></div>
+                </div>
+                <div class="mockup-chart">
+                  <div class="c-bar" style="height:40%;background:var(--clr-primary-400)"></div>
+                  <div class="c-bar" style="height:65%;background:var(--clr-emerald-400)"></div>
+                  <div class="c-bar" style="height:50%;background:var(--clr-primary-400)"></div>
+                  <div class="c-bar" style="height:80%;background:var(--clr-emerald-400)"></div>
+                  <div class="c-bar" style="height:60%;background:var(--clr-primary-400)"></div>
+                  <div class="c-bar" style="height:90%;background:var(--clr-emerald-400)"></div>
+                  <div class="c-bar" style="height:70%;background:var(--clr-primary-400)"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Highlights -->
+    <section class="pd-features">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Features</span>
+          <h2 class="section-title">Everything You Need to Run Your Store</h2>
+          <p class="section-subtitle">Powerful features designed to simplify retail management and boost your bottom line.</p>
+        </div>
+        <div class="pd-features-grid">
+          <div class="pd-feature-card">
+            <div class="pf-icon">📦</div>
+            <h4>Inventory Management</h4>
+            <p>Track stock levels in real-time, set reorder alerts, manage multiple warehouses, and handle transfers seamlessly.</p>
+          </div>
+          <div class="pd-feature-card">
+            <div class="pf-icon">💳</div>
+            <h4>POS Integration</h4>
+            <p>Accept payments, process refunds, and manage sales from a single interface with support for multiple payment methods.</p>
+          </div>
+          <div class="pd-feature-card">
+            <div class="pf-icon">📊</div>
+            <h4>Sales Analytics</h4>
+            <p>Get detailed insights into sales performance, customer behavior, and product trends with interactive dashboards.</p>
+          </div>
+          <div class="pd-feature-card">
+            <div class="pf-icon">👥</div>
+            <h4>Customer Management</h4>
+            <p>Build customer profiles, track purchase history, manage loyalty programs, and send targeted promotions.</p>
+          </div>
+          <div class="pd-feature-card">
+            <div class="pf-icon">📄</div>
+            <h4>Reporting & Reports</h4>
+            <p>Generate custom reports on sales, inventory, employees, and finances with one-click export to PDF and Excel.</p>
+          </div>
+          <div class="pd-feature-card">
+            <div class="pf-icon">🔗</div>
+            <h4>Multi-Store Support</h4>
+            <p>Manage multiple store locations from a single dashboard with centralized inventory, pricing, and reporting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="pd-benefits">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Benefits</span>
+          <h2 class="section-title">Why Retailers Choose Our System</h2>
+          <p class="section-subtitle">Join hundreds of stores that have transformed their operations.</p>
+        </div>
+        <div class="pd-benefits-grid">
+          <div class="pd-benefit-card">
+            <div class="pb-icon">⏱️</div>
+            <div class="pb-content">
+              <h4>Save 15+ Hours Per Week</h4>
+              <p>Automate inventory counts, order processing, and report generation so your team can focus on customers.</p>
+            </div>
+          </div>
+          <div class="pd-benefit-card">
+            <div class="pb-icon">📈</div>
+            <div class="pb-content">
+              <h4>Increase Sales by 25%</h4>
+              <p>Data-driven insights help you identify top-selling products, optimize pricing, and reduce stockouts.</p>
+            </div>
+          </div>
+          <div class="pd-benefit-card">
+            <div class="pb-icon">💰</div>
+            <div class="pb-content">
+              <h4>Reduce Costs by 30%</h4>
+              <p>Minimize waste, optimize inventory levels, and reduce manual labor with automated workflows.</p>
+            </div>
+          </div>
+          <div class="pd-benefit-card">
+            <div class="pb-icon">😊</div>
+            <div class="pb-content">
+              <h4>Improve Customer Satisfaction</h4>
+              <p>Faster checkouts, accurate inventory information, and personalized service keep customers coming back.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="pd-screenshots">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Screenshots</span>
+          <h2 class="section-title">See It in Action</h2>
+          <p class="section-subtitle">A glimpse into the powerful interface of our Store Management System.</p>
+        </div>
+        <div class="pd-screens-grid">
+          <div class="pd-screen-card">
+            <div class="screen-visual blue"><span class="screen-icon">📊</span></div>
+            <div class="screen-info">
+              <h4>Dashboard Overview</h4>
+              <p>Real-time view of sales, orders, and key metrics at a glance.</p>
+            </div>
+          </div>
+          <div class="pd-screen-card">
+            <div class="screen-visual green"><span class="screen-icon">📦</span></div>
+            <div class="screen-info">
+              <h4>Inventory Management</h4>
+              <p>Track stock levels, manage suppliers, and set reorder points.</p>
+            </div>
+          </div>
+          <div class="pd-screen-card">
+            <div class="screen-visual purple"><span class="screen-icon">📄</span></div>
+            <div class="screen-info">
+              <h4>Sales Reports</h4>
+              <p>Detailed analytics with exportable reports and visual charts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pd-pricing" id="pricing">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Pricing</span>
+          <h2 class="section-title">Simple, Transparent Pricing</h2>
+          <p class="section-subtitle">Choose the plan that fits your business size and needs.</p>
+        </div>
+        <div class="pd-pricing-grid">
+          <div class="pd-price-card">
+            <div class="pp-name">Starter</div>
+            <div class="pp-price"><span class="currency">$</span>29<span class="period">/month</span></div>
+            <p class="pp-desc">Perfect for small retail stores</p>
+            <a href="../pricing.html" class="pp-btn outline">Get Started</a>
+          </div>
+          <div class="pd-price-card is-featured">
+            <div class="pp-name">Business</div>
+            <div class="pp-price"><span class="currency">$</span>79<span class="period">/month</span></div>
+            <p class="pp-desc">Ideal for growing businesses</p>
+            <a href="../pricing.html" class="pp-btn solid">Get Started</a>
+          </div>
+          <div class="pd-price-card">
+            <div class="pp-name">Enterprise</div>
+            <div class="pp-price"><span class="currency">$</span>199<span class="period">/month</span></div>
+            <p class="pp-desc">For large organizations</p>
+            <a href="../pricing.html" class="pp-btn outline">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="pd-faq">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Common questions about our Store Management System.</p>
+        </div>
+        <div class="pd-faq-list">
+          <div class="pd-faq-item is-open">
+            <button class="pd-faq-question">Can I integrate with my existing POS system?<span class="pd-faq-icon">+</span></button>
+            <div class="pd-faq-answer"><p>Yes! Our Store Management System integrates with all major POS providers including Square, Shopify, Lightspeed, and more. Our API also allows for custom integrations.</p></div>
+          </div>
+          <div class="pd-faq-item">
+            <button class="pd-faq-question">How does inventory tracking work?<span class="pd-faq-icon">+</span></button>
+            <div class="pd-faq-answer"><p>Our system tracks inventory in real-time across all locations. You'll receive low-stock alerts, can set automatic reorder points, and manage transfers between stores from a single dashboard.</p></div>
+          </div>
+          <div class="pd-faq-item">
+            <button class="pd-faq-question">Can I manage multiple store locations?<span class="pd-faq-icon">+</span></button>
+            <div class="pd-faq-answer"><p>Absolutely. Our multi-store support lets you manage inventory, pricing, employees, and reporting across all your locations from one centralized dashboard.</p></div>
+          </div>
+          <div class="pd-faq-item">
+            <button class="pd-faq-question">Is there a mobile app available?<span class="pd-faq-icon">+</span></button>
+            <div class="pd-faq-answer"><p>Yes, we offer mobile apps for both iOS and Android. You can manage your store, check inventory, view reports, and process orders from anywhere.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demo Request -->
+    <section class="pd-demo" id="demo">
+      <div class="container">
+        <div class="pd-demo-card">
+          <div class="demo-grid">
+            <div class="demo-info">
+              <h3>See It in Action</h3>
+              <p>Schedule a free personalized demo and discover how our Store Management System can transform your retail operations.</p>
+              <div class="demo-benefits">
+                <div class="demo-benefit"><span class="db-check">✓</span> 30-minute live demo</div>
+                <div class="demo-benefit"><span class="db-check">✓</span> Q&A with product specialist</div>
+                <div class="demo-benefit"><span class="db-check">✓</span> Customized to your business</div>
+                <div class="demo-benefit"><span class="db-check">✓</span> No commitment required</div>
+              </div>
+            </div>
+            <form class="demo-form" onsubmit="event.preventDefault(); alert('Thank you! We will contact you shortly to schedule your demo.');">
+              <div class="form-group">
+                <input type="text" placeholder="Full Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Work Email" required>
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Company Name" required>
+              </div>
+              <div class="form-group">
+                <select required>
+                  <option value="">Store Type</option>
+                  <option value="retail">Retail Store</option>
+                  <option value="grocery">Grocery</option>
+                  <option value="clothing">Clothing & Fashion</option>
+                  <option value="electronics">Electronics</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <button type="submit" class="btn-demo">Request Demo →</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="pd-cta">
+      <div class="container">
+        <h2>Ready to Transform Your Store?</h2>
+        <p>Join thousands of retailers using JoetechAI to streamline operations and grow their business.</p>
+        <div class="cta-buttons">
+          <a href="../demo.html" class="btn-primary">Get Started Today</a>
+          <a href="../contact.html" class="btn-secondary">Talk to Sales</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../index.html" class="footer-logo"><span class="logo-icon">J</span><span class="logo-text">JoetechAI</span></a>
+          <p class="brand-desc">Smart software solutions for modern businesses.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link twitter" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link linkedin" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-link github" aria-label="GitHub">GH</a>
+            <a href="#" class="social-link youtube" aria-label="YouTube">▶</a>
+            <a href="#" class="social-link instagram" aria-label="Instagram">◉</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../careers.html">Careers</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="store-manager.html">Store Manager</a></li>
+            <li><a href="hospital-queue.html">Hospital Queue</a></li>
+            <li><a href="school-manager.html">School Manager</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="#">Documentation</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="../support.html">Help Center</a></li>
+            <li><a href="../contact.html">Contact Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-newsletter">
+        <div class="newsletter-wrapper">
+          <div class="newsletter-content">
+            <h3>Stay in the loop</h3>
+            <p>Get product updates and insights delivered to your inbox.</p>
+          </div>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <div class="input-group"><span class="input-icon">✉</span><input type="email" placeholder="Enter your email address" required></div>
+            <button type="submit" class="btn-subscribe">Subscribe →</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 JoetechAI. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/01-navigation.js"></script>
+  <script src="../assets/js/04-faq.js"></script>
+</body>
+</html>

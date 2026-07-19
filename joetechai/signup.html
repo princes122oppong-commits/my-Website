@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create your JoetechAI account — Get started free">
+  <meta name="author" content="JoetechAI">
+  <title>Create Account — JoetechAI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/01-design-system.css">
+  <link rel="stylesheet" href="assets/css/signup.css">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+  <div class="signup-page">
+
+    <div class="signup-container">
+
+      <!-- Left Side: Branding -->
+      <div class="signup-brand">
+        <div class="brand-content">
+          <a href="index.html" class="signup-logo">
+            <span class="logo-icon">J</span>
+            <span class="logo-text">JoetechAI</span>
+          </a>
+
+          <div class="brand-welcome">
+            <h1>Start Your <span class="highlight">Journey</span> Today</h1>
+            <p>Join thousands of businesses using JoetechAI to automate operations, improve productivity, and grow faster.</p>
+          </div>
+
+          <!-- Feature list -->
+          <div class="brand-features">
+            <div class="bf-item">
+              <span class="bf-check">✓</span>
+              <span class="bf-text">Free 14-day trial — no credit card required</span>
+            </div>
+            <div class="bf-item">
+              <span class="bf-check">✓</span>
+              <span class="bf-text">Access to all product modules during trial</span>
+            </div>
+            <div class="bf-item">
+              <span class="bf-check">✓</span>
+              <span class="bf-text">24/7 customer support from day one</span>
+            </div>
+            <div class="bf-item">
+              <span class="bf-check">✓</span>
+              <span class="bf-text">Cancel anytime with no penalties</span>
+            </div>
+          </div>
+
+          <!-- Testimonial -->
+          <div class="brand-testimonial">
+            <p class="qt-text">"JoetechAI made it incredibly easy to get started. We were up and running in less than an hour, and the support team was amazing throughout."</p>
+            <div class="qt-author">
+              <span class="qt-avatar">DR</span>
+              <div>
+                <div class="qt-name">David Richards</div>
+                <div class="qt-role">Founder, GreenLeaf Stores</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side: Sign Up Form -->
+      <div class="signup-form-side">
+        <div class="signup-card">
+          <div class="signup-header">
+            <h2>Create Account</h2>
+            <p>Fill in your details to get started free</p>
+          </div>
+
+          <form class="signup-form" onsubmit="event.preventDefault(); alert('Account created successfully! Welcome to JoetechAI.');">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <div class="input-wrap">
+                  <span class="input-icon">👤</span>
+                  <input type="text" id="firstName" placeholder="John" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <div class="input-wrap">
+                  <span class="input-icon">👤</span>
+                  <input type="text" id="lastName" placeholder="Doe" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <div class="input-wrap">
+                <span class="input-icon">✉</span>
+                <input type="email" id="email" placeholder="you@company.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <div class="input-wrap">
+                <span class="input-icon">🏢</span>
+                <input type="text" id="company" placeholder="Your Company Inc." required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <div class="input-wrap">
+                <span class="input-icon">🔒</span>
+                <input type="password" id="password" placeholder="Create a strong password" required minlength="8">
+              </div>
+            </div>
+
+            <div class="form-terms">
+              <input type="checkbox" id="terms" required>
+              <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+            </div>
+
+            <button type="submit" class="btn-signup">Create Free Account →</button>
+
+            <div class="divider">
+              <span>Or sign up with</span>
+            </div>
+
+            <div class="sso-buttons">
+              <a href="#" class="btn-sso">🔵 Google</a>
+              <a href="#" class="btn-sso">⚫ GitHub</a>
+            </div>
+
+            <p class="login-link">
+              Already have an account? <a href="login.html">Sign in</a>
+            </p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

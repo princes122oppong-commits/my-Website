@@ -1,0 +1,183 @@
+/* ============================================
+   JOETECHAI — Why Choose JoetechAI
+   8 premium glassmorphism feature cards
+   ============================================ */
+
+.features {
+  position: relative;
+  background: var(--clr-white);
+  overflow: hidden;
+}
+
+/* Soft gradient overlay */
+.features::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 10% 30%, rgba(37, 99, 235, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 90% 70%, rgba(16, 185, 129, 0.02) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.features .container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  position: relative;
+  z-index: 1;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+  margin-top: var(--space-12);
+}
+
+/* ---- Feature Card (Premium Glassmorphism) ---- */
+.feature-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--clr-navy-100);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-8) var(--space-6);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+  cursor: default;
+}
+
+/* Gradient top border (revealed on hover) */
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-border);
+  background-size: 200% 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
+}
+
+/* Subtle inner glow overlay */
+.feature-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.03) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  border-radius: var(--radius-2xl);
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.06),
+    0 8px 24px rgba(37, 99, 235, 0.06);
+  border-color: rgba(37, 99, 235, 0.10);
+  background: var(--clr-white);
+}
+
+.feature-card:hover::before {
+  opacity: 1;
+  animation: shimmer 2s linear infinite;
+}
+
+.feature-card:hover::after {
+  opacity: 1;
+}
+
+/* ---- Icon ---- */
+.feature-card .feat-icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(37, 99, 235, 0.06);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  margin-bottom: var(--space-5);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  z-index: 1;
+}
+
+.feature-card:hover .feat-icon {
+  background: var(--gradient-primary);
+  color: var(--clr-white);
+  transform: scale(1.1) rotate(-4deg);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.2);
+}
+
+/* ---- Content ---- */
+.feature-card h4 {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--clr-navy-800);
+  margin-bottom: var(--space-2);
+  position: relative;
+  z-index: 1;
+  letter-spacing: var(--ls-normal);
+  transition: color var(--transition-base);
+}
+
+.feature-card:hover h4 {
+  color: var(--clr-primary-600);
+}
+
+.feature-card p {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--clr-navy-400);
+  line-height: var(--lh-relaxed);
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    gap: var(--space-4);
+  }
+
+  .feature-card {
+    padding: var(--space-6);
+  }
+}
+
+@media (max-width: 480px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    padding: var(--space-6);
+  }
+
+  .feature-card .feat-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.15rem;
+  }
+}

@@ -1,0 +1,89 @@
+/* ============================================
+   JOETECHAI — Section 11: FAQ
+   Accordion-style questions
+   ============================================ */
+
+.faq {
+  background: var(--clr-gray-50);
+}
+
+.faq .container {
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.faq-list {
+  margin-top: var(--space-12);
+}
+
+.faq-item {
+  background: var(--clr-white);
+  border: 1px solid var(--clr-navy-100);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-3);
+  overflow: hidden;
+  transition: var(--transition-base);
+}
+
+.faq-item:hover {
+  border-color: var(--clr-navy-200);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-5) var(--space-6);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--fw-semibold);
+  color: var(--clr-navy-800);
+  text-align: left;
+  transition: var(--transition-base);
+  gap: var(--space-4);
+}
+
+.faq-question:hover {
+  color: var(--clr-primary-600);
+}
+
+.faq-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: var(--transition-base);
+  color: var(--clr-navy-300);
+  font-size: var(--text-xl);
+  font-weight: var(--fw-light);
+}
+
+.faq-item.is-open .faq-icon {
+  transform: rotate(45deg);
+  color: var(--clr-primary-600);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.faq-item.is-open .faq-answer {
+  max-height: 300px;
+}
+
+.faq-answer p {
+  padding: 0 var(--space-6) var(--space-5);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--clr-navy-400);
+  line-height: var(--lh-loose);
+}

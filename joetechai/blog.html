@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JoetechAI Blog — Insights, updates, and stories">
+  <title>Blog — JoetechAI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/01-design-system.css">
+  <link rel="stylesheet" href="assets/css/02-navigation.css">
+  <link rel="stylesheet" href="assets/css/13-footer.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    .blog-hero{position:relative;min-height:40vh;display:flex;align-items:center;background:var(--gradient-hero);overflow:hidden;padding-top:var(--nav-height)}.blog-hero .container{max-width:var(--container-max);margin:0 auto;padding:0 var(--space-6);position:relative;z-index:1;text-align:center}.blog-hero h1{font-family:var(--font-heading);font-size:var(--text-5xl);font-weight:var(--fw-bold);color:var(--clr-white);margin-bottom:var(--space-5)}.blog-hero h1 .highlight{background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.blog-hero p{font-family:var(--font-body);font-size:var(--text-md);color:rgba(255,255,255,0.5);max-width:550px;margin:0 auto;line-height:var(--lh-loose)}.blog-list{padding:var(--space-20) 0;background:var(--clr-gray-50)}.blog-list .container{max-width:var(--container-max);margin:0 auto;padding:0 var(--space-6)}.blog-list .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-6);margin-top:var(--space-12)}.blog-list .blog-card{background:var(--clr-white);border:1px solid var(--clr-navy-100);border-radius:var(--radius-2xl);overflow:hidden;transition:var(--transition-spring)}.blog-list .blog-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-xl)}.blog-list .blog-card .blog-img{height:200px;display:flex;align-items:center;justify-content:center;font-size:3rem}.blog-list .blog-card .blog-img.blue{background:linear-gradient(135deg,#EFF6FF,#DBEAFE)}.blog-list .blog-card .blog-img.green{background:linear-gradient(135deg,#ECFDF5,#D1FAE5)}.blog-list .blog-card .blog-img.purple{background:linear-gradient(135deg,#F5F3FF,#EDE9FE)}.blog-list .blog-card .blog-img.orange{background:linear-gradient(135deg,#FFF7ED,#FFEDD5)}.blog-list .blog-card .blog-img.pink{background:linear-gradient(135deg,#FDF2F8,#FCE7F3)}.blog-list .blog-card .blog-img.teal{background:linear-gradient(135deg,#F0FDFA,#CCFBF1)}.blog-list .blog-card .blog-body{padding:var(--space-6)}.blog-list .blog-card .blog-tag{display:inline-block;padding:4px 10px;background:rgba(37,99,235,0.06);border:1px solid rgba(37,99,235,0.08);border-radius:var(--radius-full);font-family:var(--font-body);font-size:0.7rem;font-weight:var(--fw-medium);color:var(--clr-primary-600);margin-bottom:var(--space-3)}.blog-list .blog-card h3{font-family:var(--font-heading);font-size:var(--text-lg);font-weight:var(--fw-semibold);color:var(--clr-navy-800);margin-bottom:var(--space-2);transition:color var(--transition-base)}.blog-list .blog-card:hover h3{color:var(--clr-primary-600)}.blog-list .blog-card p{font-family:var(--font-body);font-size:var(--text-sm);color:var(--clr-navy-400);line-height:var(--lh-relaxed);margin-bottom:var(--space-4)}.blog-list .blog-card .blog-meta{font-family:var(--font-body);font-size:var(--text-xs);color:var(--clr-navy-300);display:flex;gap:var(--space-4)}.blog-list .blog-card .blog-meta span{display:flex;align-items:center;gap:4px}@media(max-width:900px){.blog-list .blog-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:480px){.blog-list .blog-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="navbar-logo"><span class="logo-icon">J</span><span class="logo-text">JoetechAI</span></a>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="industries.html">Industries</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="support.html">Support</a>
+      </div>
+      <div class="navbar-actions">
+        <a href="login.html" class="btn-login">Login</a>
+        <a href="demo.html" class="btn-demo">Request Demo</a>
+      </div>
+      <button class="navbar-toggle" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <main>
+    <section class="blog-hero">
+      <div class="container">
+        <h1>Insights & <span class="highlight">Updates</span></h1>
+        <p>Product updates, industry insights, and stories from the JoetechAI team.</p>
+      </div>
+    </section>
+    <section class="blog-list">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Blog</span>
+          <h2 class="section-title">Latest Articles</h2>
+          <p class="section-subtitle">Stay up to date with the latest from JoetechAI.</p>
+        </div>
+        <div class="blog-grid">
+          <div class="blog-card"><div class="blog-img blue">📊</div><div class="blog-body"><span class="blog-tag">Product</span><h3>Introducing Advanced Analytics Dashboard</h3><p>Our new analytics dashboard gives you deeper insights into your business performance with real-time data visualization.</p><div class="blog-meta"><span>📅 Jun 15, 2026</span><span>👤 Joseph Tetteh</span></div></div></div>
+          <div class="blog-card"><div class="blog-img green">🏪</div><div class="blog-body"><span class="blog-tag">Feature</span><h3>5 New Features for Store Management</h3><p>We've added powerful new features to help retailers manage inventory, track sales, and delight customers.</p><div class="blog-meta"><span>📅 Jun 10, 2026</span><span>👤 Abena Osei</span></div></div></div>
+          <div class="blog-card"><div class="blog-img purple">🏥</div><div class="blog-body"><span class="blog-tag">Healthcare</span><h3>How Digital Queue Management Improves Patient Care</h3><p>Learn how hospitals are using our queue management system to reduce wait times and improve patient satisfaction.</p><div class="blog-meta"><span>📅 Jun 5, 2026</span><span>👤 Dr. James Rodriguez</span></div></div></div>
+          <div class="blog-card"><div class="blog-img orange">📚</div><div class="blog-body"><span class="blog-tag">Education</span><h3>Transforming School Administration with Technology</h3><p>Discover how schools are streamlining operations with digital tools for attendance, grading, and communication.</p><div class="blog-meta"><span>📅 May 28, 2026</span><span>👤 Amanda Kiprop</span></div></div></div>
+          <div class="blog-card"><div class="blog-img pink">🔒</div><div class="blog-body"><span class="blog-tag">Security</span><h3>Our Commitment to Data Security & Privacy</h3><p>Learn about the security measures we take to protect your data and maintain your trust.</p><div class="blog-meta"><span>📅 May 20, 2026</span><span>👤 Security Team</span></div></div></div>
+          <div class="blog-card"><div class="blog-img teal">🚀</div><div class="blog-body"><span class="blog-tag">Company</span><h3>JoetechAI Reaches 10,000 Users Milestone</h3><p>We're celebrating a major milestone and reflecting on the journey that brought us here.</p><div class="blog-meta"><span>📅 May 15, 2026</span><span>👤 Esi Mensah</span></div></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand"><a href="index.html" class="footer-logo"><span class="logo-icon">J</span><span class="logo-text">JoetechAI</span></a><p class="brand-desc">Smart software solutions for modern businesses.</p><div class="footer-social"><a href="#" class="social-link twitter" aria-label="Twitter">𝕏</a><a href="#" class="social-link linkedin" aria-label="LinkedIn">in</a><a href="#" class="social-link github" aria-label="GitHub">GH</a><a href="#" class="social-link youtube" aria-label="YouTube">▶</a><a href="#" class="social-link instagram" aria-label="Instagram">◉</a></div></div>
+        <div class="footer-column"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-column"><h4>Products</h4><ul><li><a href="products/store-manager.html">Store Manager</a></li><li><a href="products/hospital-queue.html">Hospital Queue</a></li><li><a href="products/school-manager.html">School Manager</a></li></ul></div>
+        <div class="footer-column"><h4>Resources</h4><ul><li><a href="blog.html">Blog</a></li><li><a href="#">Documentation</a></li></ul></div>
+        <div class="footer-column"><h4>Support</h4><ul><li><a href="support.html">Help Center</a></li><li><a href="contact.html">Contact Support</a></li></ul></div>
+        <div class="footer-column"><h4>Legal</h4><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Cookies</a></li></ul></div>
+      </div>
+      <div class="footer-newsletter">
+        <div class="newsletter-wrapper"><div class="newsletter-content"><h3>Stay in the loop</h3><p>Get product updates and insights delivered to your inbox.</p></div>
+        <form class="newsletter-form" onsubmit="event.preventDefault();alert('Thank you for subscribing!');"><div class="input-group"><span class="input-icon">✉</span><input type="email" placeholder="Enter your email address" required></div><button type="submit" class="btn-subscribe">Subscribe →</button></form></div>
+      </div>
+      <div class="footer-bottom"><p class="copyright">&copy; 2026 JoetechAI. All Rights Reserved.</p><div class="legal-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookies</a></div></div>
+    </div>
+  </footer>
+  <script src="assets/js/01-navigation.js"></script>
+</body>
+</html>

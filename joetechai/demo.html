@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request a demo of JoetechAI — See our software in action">
+  <meta name="author" content="JoetechAI">
+  <title>Request a Demo — JoetechAI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/01-design-system.css">
+  <link rel="stylesheet" href="assets/css/02-navigation.css">
+  <link rel="stylesheet" href="assets/css/demo.css">
+  <link rel="stylesheet" href="assets/css/13-footer.css">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="navbar-logo">
+        <span class="logo-icon">J</span>
+        <span class="logo-text">JoetechAI</span>
+      </a>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#industries">Industries</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="support.html">Support</a>
+      </div>
+      <div class="navbar-actions">
+        <a href="login.html" class="btn-login">Login</a>
+        <a href="demo.html" class="btn-demo">Request Demo</a>
+      </div>
+      <button class="navbar-toggle" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="demo-hero">
+      <div class="container">
+        <h1>See JoetechAI <span class="highlight">in Action</span></h1>
+        <p>Schedule a free, personalized demo with our team. Discover how JoetechAI can help streamline your operations, boost productivity, and drive growth.</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="demo-main">
+      <div class="container">
+        <div class="demo-grid">
+
+          <!-- Left: Benefits -->
+          <div class="demo-benefits-side">
+            <span class="demo-badge">Why Request a Demo</span>
+            <h2>Discover What JoetechAI Can Do for You</h2>
+            <p class="demo-sub">Get a personalized walkthrough of our platform tailored to your business needs.</p>
+
+            <div class="demo-benefit-list">
+              <div class="db-card">
+                <div class="db-icon">🎯</div>
+                <div class="db-info">
+                  <h4>Personalized Walkthrough</h4>
+                  <p>See the features that matter most to your business in a demo customized to your industry and use case.</p>
+                </div>
+              </div>
+              <div class="db-card">
+                <div class="db-icon">💡</div>
+                <div class="db-info">
+                  <h4>Expert Guidance</h4>
+                  <p>Our product specialists will answer your questions and show you best practices for getting the most out of JoetechAI.</p>
+                </div>
+              </div>
+              <div class="db-card">
+                <div class="db-icon">⏱️</div>
+                <div class="db-info">
+                  <h4>30-Minute Session</h4>
+                  <p>Concise, focused demo that respects your time. We'll show you the platform and leave plenty of time for Q&A.</p>
+                </div>
+              </div>
+              <div class="db-card">
+                <div class="db-icon">🔒</div>
+                <div class="db-info">
+                  <h4>No Commitment Required</h4>
+                  <p>There's no obligation to purchase. Our goal is to help you determine if JoetechAI is the right fit for your business.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="demo-quote">
+              <p class="dq-text">"The demo team was incredibly helpful. They showed us exactly how JoetechAI could solve our specific challenges, and we were convinced within the first 15 minutes."</p>
+              <p class="dq-author">— Amanda Kiprop, Principal, Bright Future Academy</p>
+            </div>
+          </div>
+
+          <!-- Right: Form -->
+          <div class="demo-form-wrap">
+            <h3>Request Your Demo</h3>
+            <p class="form-sub">Fill out the form below and we'll contact you within 24 hours to schedule your personalized session.</p>
+
+            <form class="demo-form" onsubmit="event.preventDefault(); alert('Thank you! We have received your demo request and will contact you within 24 hours to schedule your session.');">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" placeholder="John" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" placeholder="Doe" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Work Email</label>
+                <input type="email" id="email" placeholder="john@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="+1 (234) 567-890">
+              </div>
+
+              <div class="form-group">
+                <label for="company">Company Name</label>
+                <input type="text" id="company" placeholder="Your Company Inc." required>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="size">Company Size</label>
+                  <select id="size">
+                    <option value="">Select size</option>
+                    <option value="1-10">1-10 employees</option>
+                    <option value="11-50">11-50 employees</option>
+                    <option value="51-200">51-200 employees</option>
+                    <option value="201-1000">201-1000 employees</option>
+                    <option value="1000+">1000+ employees</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="product">Product Interest</label>
+                  <select id="product">
+                    <option value="">Select product</option>
+                    <option value="store">Store Management</option>
+                    <option value="hospital">Hospital Queue</option>
+                    <option value="school">School Management</option>
+                    <option value="restaurant">Restaurant Management</option>
+                    <option value="pharmacy">Pharmacy Management</option>
+                    <option value="hotel">Hotel Management</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Additional Notes</label>
+                <textarea id="message" placeholder="Tell us about your business and what you're looking for..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit">Request My Demo →</button>
+              <p class="form-note">We respect your privacy. No spam, ever.</p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="demo-process">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Process</span>
+          <h2 class="section-title">What to Expect</h2>
+          <p class="section-subtitle">From request to discovery — here's how our demo process works.</p>
+        </div>
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <h4>Submit Your Request</h4>
+            <p>Fill out the form and tell us about your business and what you're looking for.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <h4>We Reach Out</h4>
+            <p>Our team contacts you within 24 hours to schedule a convenient time for your demo.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <h4>Personalized Demo</h4>
+            <p>We walk you through the platform, focusing on the features most relevant to your business.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <h4>Q&A and Next Steps</h4>
+            <p>Ask questions, explore pricing, and decide if JoetechAI is right for you — no pressure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="demo-faq">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">Demo Questions</h2>
+          <p class="section-subtitle">Common questions about our demo process.</p>
+        </div>
+        <div class="dfaq-list">
+          <div class="dfaq-item is-open">
+            <button class="dfaq-question">How long does the demo last?<span class="dfaq-icon">+</span></button>
+            <div class="dfaq-answer"><p>Our standard demo sessions are 30 minutes long. This gives us enough time to show you the key features and answer your questions. If you need more time, we can always schedule a follow-up.</p></div>
+          </div>
+          <div class="dfaq-item">
+            <button class="dfaq-question">Do I need to prepare anything?<span class="dfaq-icon">+</span></button>
+            <div class="dfaq-answer"><p>No preparation is needed. Just bring your questions and any specific challenges you're hoping to solve. If you'd like us to focus on particular features, let us know when you schedule.</p></div>
+          </div>
+          <div class="dfaq-item">
+            <button class="dfaq-question">Can I bring my team?<span class="dfaq-icon">+</span></button>
+            <div class="dfaq-answer"><p>Absolutely! We encourage you to invite any team members who would benefit from seeing the platform. The more stakeholders involved, the better we can address your needs.</p></div>
+          </div>
+          <div class="dfaq-item">
+            <button class="dfaq-question">Is there a free trial available?<span class="dfaq-icon">+</span></button>
+            <div class="dfaq-answer"><p>Yes! After your demo, we offer a 14-day free trial so you can explore the platform hands-on with your own data. Our support team will be available throughout to help you get started.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="demo-cta">
+      <div class="container">
+        <h2>Ready to Get Started?</h2>
+        <p>Join thousands of businesses using JoetechAI to automate operations and drive growth.</p>
+        <div class="cta-buttons">
+          <a href="signup.html" class="btn-primary">Start Free Trial</a>
+          <a href="pricing.html" class="btn-secondary">View Pricing</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><span class="logo-icon">J</span><span class="logo-text">JoetechAI</span></a>
+          <p class="brand-desc">Smart software solutions for modern businesses.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link twitter" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link linkedin" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-link github" aria-label="GitHub">GH</a>
+            <a href="#" class="social-link youtube" aria-label="YouTube">▶</a>
+            <a href="#" class="social-link instagram" aria-label="Instagram">◉</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products/store-manager.html">Store Manager</a></li>
+            <li><a href="products/hospital-queue.html">Hospital Queue</a></li>
+            <li><a href="products/school-manager.html">School Manager</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">Documentation</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="support.html">Help Center</a></li>
+            <li><a href="contact.html">Contact Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-newsletter">
+        <div class="newsletter-wrapper">
+          <div class="newsletter-content">
+            <h3>Stay in the loop</h3>
+            <p>Get product updates and insights delivered to your inbox.</p>
+          </div>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <div class="input-group"><span class="input-icon">✉</span><input type="email" placeholder="Enter your email address" required></div>
+            <button type="submit" class="btn-subscribe">Subscribe →</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 JoetechAI. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/01-navigation.js"></script>
+  <script src="assets/js/04-faq.js"></script>
+</body>
+</html>

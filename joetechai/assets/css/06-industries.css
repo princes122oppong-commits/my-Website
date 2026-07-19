@@ -1,0 +1,281 @@
+/* ============================================
+   JOETECHAI — Industries Section
+   Large premium cards with illustrations
+   ============================================ */
+
+.industries {
+  position: relative;
+  background: var(--clr-gray-50);
+  overflow: hidden;
+}
+
+.industries::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(16, 185, 129, 0.02) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.industries .container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  position: relative;
+  z-index: 1;
+}
+
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+  margin-top: var(--space-12);
+}
+
+/* ---- Industry Card (Large Premium) ---- */
+.industry-card {
+  position: relative;
+  background: var(--clr-white);
+  border: 1px solid var(--clr-navy-100);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-8) var(--space-6) var(--space-6);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.industry-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-border);
+  background-size: 200% 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
+}
+
+.industry-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(37, 99, 235, 0.12);
+}
+
+.industry-card:hover::before {
+  opacity: 1;
+  animation: shimmer 2s linear infinite;
+}
+
+/* ---- Illustration Area ---- */
+.industry-illus {
+  width: 100%;
+  height: 120px;
+  border-radius: var(--radius-xl);
+  margin-bottom: var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.industry-card:hover .industry-illus {
+  transform: scale(1.03);
+}
+
+/* Per-industry illustration backgrounds */
+.industry-illus.retail { background: linear-gradient(135deg, rgba(37,99,235,0.08), rgba(37,99,235,0.02)); }
+.industry-illus.healthcare { background: linear-gradient(135deg, rgba(16,185,129,0.08), rgba(16,185,129,0.02)); }
+.industry-illus.education { background: linear-gradient(135deg, rgba(124,58,237,0.08), rgba(124,58,237,0.02)); }
+.industry-illus.hospitality { background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(245,158,11,0.02)); }
+.industry-illus.restaurants { background: linear-gradient(135deg, rgba(239,68,68,0.08), rgba(239,68,68,0.02)); }
+.industry-illus.pharmacies { background: linear-gradient(135deg, rgba(16,185,129,0.08), rgba(16,185,129,0.02)); }
+.industry-illus.churches { background: linear-gradient(135deg, rgba(124,58,237,0.08), rgba(124,58,237,0.02)); }
+.industry-illus.real-estate { background: linear-gradient(135deg, rgba(37,99,235,0.08), rgba(37,99,235,0.02)); }
+
+.illus-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Retail: shopping bags + shelf */
+.retail-bag { position: absolute; width: 24px; border-radius: 4px 4px 8px 8px; bottom: 25px; transition: transform 0.3s ease; }
+.retail-bag:nth-child(1) { left: 22%; height: 34px; background: #2563EB; }
+.retail-bag:nth-child(2) { left: 38%; height: 26px; background: #7C3AED; }
+.retail-bag:nth-child(3) { left: 54%; height: 38px; background: #10B981; }
+.retail-bag:nth-child(4) { left: 70%; height: 22px; background: #F59E0B; }
+.retail-bag::before { content: ''; position: absolute; top: -6px; left: 50%; transform: translateX(-50%); width: 10px; height: 6px; border-radius: 2px 2px 0 0; background: inherit; opacity: 0.6; }
+.industry-card:hover .retail-bag:nth-child(odd) { transform: translateY(-4px); }
+.industry-card:hover .retail-bag:nth-child(even) { transform: translateY(-2px); }
+
+/* Healthcare: heart rate + bed */
+.health-line { position: absolute; top: 20px; left: 10%; right: 10%; height: 25px; }
+.health-line svg { width: 100%; height: 100%; }
+.health-bed { position: absolute; bottom: 25px; width: 44px; height: 5px; background: rgba(16,185,129,0.2); border-radius: 3px; }
+.health-bed:nth-child(2) { left: 14%; }
+.health-bed:nth-child(3) { left: 42%; }
+.health-bed:nth-child(4) { left: 70%; }
+.health-bed::before { content: ''; position: absolute; top: -10px; left: 3px; width: 7px; height: 10px; background: rgba(16,185,129,0.12); border-radius: 3px 3px 0 0; }
+
+/* Education: board + desks */
+.edu-board { position: absolute; top: 18px; left: 18%; right: 18%; height: 40px; background: rgba(124,58,237,0.06); border-radius: var(--radius-md); border: 2px solid rgba(124,58,237,0.1); }
+.edu-board::after { content: 'A+'; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-family: var(--font-heading); font-size: 1rem; font-weight: var(--fw-bold); color: rgba(124,58,237,0.25); }
+.edu-desk { position: absolute; bottom: 25px; width: 26px; height: 16px; background: rgba(124,58,237,0.08); border-radius: 4px; }
+.edu-desk:nth-child(2) { left: 14%; }
+.edu-desk:nth-child(3) { left: 42%; }
+.edu-desk:nth-child(4) { left: 70%; }
+
+/* Hospitality: building + windows */
+.hosp-building { position: absolute; bottom: 18px; left: 22%; right: 22%; height: 55px; background: rgba(245,158,11,0.05); border-radius: 6px 6px 0 0; border: 2px solid rgba(245,158,11,0.08); border-bottom: none; }
+.hosp-window { position: absolute; width: 8px; height: 10px; background: rgba(245,158,11,0.1); border-radius: 2px; }
+.hosp-window:nth-child(2) { top: 10px; left: 22%; }
+.hosp-window:nth-child(3) { top: 10px; left: 44%; }
+.hosp-window:nth-child(4) { top: 10px; left: 66%; }
+.hosp-window:nth-child(5) { top: 30px; left: 22%; }
+.hosp-window:nth-child(6) { top: 30px; left: 44%; }
+.hosp-window:nth-child(7) { top: 30px; left: 66%; }
+.hosp-door { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 12px; height: 15px; background: rgba(245,158,11,0.12); border-radius: 3px 3px 0 0; }
+
+/* Restaurants: plate + table + chairs */
+.rest-plate { position: absolute; width: 42px; height: 42px; border: 3px solid rgba(239,68,68,0.1); border-radius: 50%; top: 48%; left: 50%; transform: translate(-50%,-50%); }
+.rest-plate::after { content: '🍽️'; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 1.2rem; }
+.rest-table { position: absolute; bottom: 25px; left: 12%; right: 12%; height: 3px; background: rgba(239,68,68,0.08); }
+.rest-chair { position: absolute; bottom: 16px; width: 11px; height: 11px; border: 2px solid rgba(239,68,68,0.08); border-radius: 3px; }
+.rest-chair:nth-child(3) { left: 20%; }
+.rest-chair:nth-child(4) { right: 20%; }
+
+/* Pharmacies: cross + bottles */
+.pharm-cross { position: absolute; top: 12px; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; }
+.pharm-cross::before { content: ''; position: absolute; top: 2px; left: 6px; width: 8px; height: 16px; background: rgba(16,185,129,0.2); border-radius: 2px; }
+.pharm-cross::after { content: ''; position: absolute; top: 6px; left: 2px; width: 16px; height: 8px; background: rgba(16,185,129,0.2); border-radius: 2px; }
+.pharm-shelf { position: absolute; bottom: 25px; left: 12%; right: 12%; height: 3px; background: rgba(16,185,129,0.1); }
+.pharm-bottle { position: absolute; width: 12px; border-radius: 3px 3px 5px 5px; bottom: 32px; }
+.pharm-bottle:nth-child(3) { left: 18%; height: 24px; background: rgba(16,185,129,0.2); }
+.pharm-bottle:nth-child(4) { left: 32%; height: 18px; background: rgba(37,99,235,0.2); }
+.pharm-bottle:nth-child(5) { left: 46%; height: 28px; background: rgba(245,158,11,0.2); }
+.pharm-bottle:nth-child(6) { left: 60%; height: 16px; background: rgba(239,68,68,0.2); }
+.pharm-bottle:nth-child(7) { left: 74%; height: 22px; background: rgba(124,58,237,0.2); }
+
+/* Churches: building + cross + windows */
+.church-building { position: absolute; bottom: 18px; left: 28%; right: 28%; height: 45px; background: rgba(124,58,237,0.05); border-radius: 4px 4px 0 0; border: 2px solid rgba(124,58,237,0.08); border-bottom: none; }
+.church-roof { position: absolute; bottom: 60px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 20px solid transparent; border-right: 20px solid transparent; border-bottom: 18px solid rgba(124,58,237,0.08); }
+.church-cross-top { position: absolute; top: 8px; left: 50%; transform: translateX(-50%); width: 2px; height: 18px; background: rgba(124,58,237,0.15); }
+.church-cross-top::after { content: ''; position: absolute; top: 2px; left: -4px; width: 10px; height: 2px; background: rgba(124,58,237,0.15); }
+.church-window { position: absolute; width: 7px; height: 10px; background: rgba(124,58,237,0.08); border-radius: 4px 4px 0 0; }
+.church-window:nth-child(5) { bottom: 28px; left: 34%; }
+.church-window:nth-child(6) { bottom: 28px; left: 58%; }
+.church-door { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 10px; height: 14px; background: rgba(124,58,237,0.1); border-radius: 3px 3px 0 0; }
+
+/* Real Estate: buildings */
+.real-building { position: absolute; bottom: 18px; border-radius: 4px 4px 0 0; background: rgba(37,99,235,0.06); border: 1.5px solid rgba(37,99,235,0.08); border-bottom: none; }
+.real-building:nth-child(1) { left: 16%; width: 26%; height: 55px; }
+.real-building:nth-child(2) { left: 46%; width: 38%; height: 70px; }
+.real-building:nth-child(3) { left: 16%; bottom: 18px; }
+.real-window { position: absolute; width: 6px; height: 8px; background: rgba(37,99,235,0.08); border-radius: 1px; }
+.real-building:nth-child(1) .real-window:nth-child(2) { top: 10px; left: 20%; }
+.real-building:nth-child(1) .real-window:nth-child(3) { top: 10px; left: 55%; }
+.real-building:nth-child(1) .real-window:nth-child(4) { top: 30px; left: 20%; }
+.real-building:nth-child(1) .real-window:nth-child(5) { top: 30px; left: 55%; }
+.real-building:nth-child(2) .real-window:nth-child(2) { top: 12px; left: 18%; }
+.real-building:nth-child(2) .real-window:nth-child(3) { top: 12px; left: 40%; }
+.real-building:nth-child(2) .real-window:nth-child(4) { top: 12px; left: 62%; }
+.real-building:nth-child(2) .real-window:nth-child(5) { top: 34px; left: 18%; }
+.real-building:nth-child(2) .real-window:nth-child(6) { top: 34px; left: 40%; }
+.real-building:nth-child(2) .real-window:nth-child(7) { top: 34px; left: 62%; }
+
+/* ---- Card Content ---- */
+.industry-card h3 {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: var(--fw-semibold);
+  color: var(--clr-navy-800);
+  margin-bottom: var(--space-2);
+  letter-spacing: var(--ls-normal);
+  transition: color var(--transition-base);
+}
+
+.industry-card:hover h3 {
+  color: var(--clr-primary-600);
+}
+
+.industry-card .industry-desc {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--clr-navy-400);
+  line-height: var(--lh-relaxed);
+  margin-bottom: var(--space-5);
+  flex: 1;
+}
+
+.industry-card .industry-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--clr-primary-600);
+  text-decoration: none;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--clr-navy-100);
+  transition: var(--transition-base);
+}
+
+.industry-card .industry-link:hover {
+  gap: var(--space-3);
+}
+
+.industry-card .industry-link .ind-arrow {
+  transition: transform var(--transition-base);
+}
+
+.industry-card .industry-link:hover .ind-arrow {
+  transform: translateX(4px);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-5);
+  }
+}
+
+@media (max-width: 768px) {
+  .industries-grid {
+    gap: var(--space-4);
+  }
+
+  .industry-card {
+    padding: var(--space-6) var(--space-5) var(--space-5);
+  }
+
+  .industry-illus {
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .industries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-illus {
+    height: 90px;
+  }
+}
